@@ -29,7 +29,15 @@ export default defineConfig(({ mode }) => {
 				exposes: {
 					'./remote-app': './src/App.tsx',
 				},
-				remotes: {},
+				remotes: {
+					host: {
+						type: 'module',
+						name: 'host',
+						entry: 'http://localhost:4173/remoteEntry.js',
+						entryGlobalName: 'host',
+						shareScope: 'default',
+					},
+				},
 				shared: {
 					react: {
 						requiredVersion: dependencies.react,

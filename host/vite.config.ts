@@ -20,7 +20,9 @@ export default defineConfig(() => ({
 					shareScope: 'default',
 				},
 			},
-			exposes: {},
+			exposes: {
+				'./App': './src/App',
+			},
 			filename: 'remoteEntry.js',
 			shared: {
 				react: {
