@@ -1,7 +1,7 @@
-import { lazy, useEffect } from 'react';
+import { useEffect } from 'react';
 import Counter from './components/Counter';
 // @ts-ignore
-const HostApp = lazy(() => import('host/App'));
+const HostButton = lazy(() => import('host/HostButton'));
 
 export default () => {
 	useEffect(() => {
@@ -41,7 +41,7 @@ export default () => {
 			<div style={{ marginTop: '10px', fontSize: '25px' }}>I'm the remote app</div>
 			<Counter />
 			<div style={{ marginTop: '10px', fontSize: '25px' }}>Also the Host App</div>
-			<HostApp />
+			<HostButton />
 		</div>
 	);
 };

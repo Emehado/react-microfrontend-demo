@@ -21,7 +21,7 @@ export default defineConfig(() => ({
 				},
 			},
 			exposes: {
-				'./App': './src/App',
+				'./HostButton': './src/components/HostButton',
 			},
 			filename: 'remoteEntry.js',
 			shared: {
