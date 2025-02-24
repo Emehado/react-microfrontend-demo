@@ -1,4 +1,5 @@
 import { federation } from '@module-federation/vite';
+import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import { writeFileSync } from 'fs';
 import { defineConfig, loadEnv } from 'vite';
@@ -16,6 +17,7 @@ export default defineConfig(({ mode }) => {
 			target: 'chrome89',
 		},
 		plugins: [
+			tailwindcss(),
 			{
 				name: 'generate-environment',
 				options: function () {

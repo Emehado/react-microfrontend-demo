@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import './App.css';
 import Counter from './components/Counter';
 
 export default () => {
@@ -7,19 +8,7 @@ export default () => {
 	}, []);
 
 	return (
-		<div
-			style={{
-				background: '#1f2124',
-				boxShadow: '0 0 20px rgba(0, 0, 0, 0.4)',
-				borderRadius: '5px',
-				margin: '20px 20px 20px 20px',
-				width: '250px',
-				padding: '20px',
-				textAlign: 'center',
-				color: 'white',
-				float: 'left',
-			}}
-		>
+		<div className="bg-stone-900 shadow-[0_0_20px_rgba(0,0,0,0.4)] rounded-[5px] m-5 w-[250px] p-5 text-center text-white float-left">
 			<div className="icon">
 				<svg
 					enableBackground="new 0 0 512 512"
@@ -36,7 +25,7 @@ export default () => {
 					/>
 				</svg>
 			</div>
-			<div style={{ marginTop: '10px', fontSize: '25px' }}>I'm the remote app</div>
+			<div className="mt-[10px] text-[25px]">I'm the remote app</div>
 			<Counter />
 		</div>
 	);
