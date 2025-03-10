@@ -1,6 +1,5 @@
 import { lazy, Suspense, useEffect } from 'react';
 import { of, tap } from 'rxjs';
-import './App.css';
 import Counter from './components/Counter';
 
 const Remote = lazy(

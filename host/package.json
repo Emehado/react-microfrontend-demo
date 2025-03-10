@@ -15,7 +15,7 @@
 		"tailwindcss": "^4.0.8"
 	},
 	"devDependencies": {
-		"@module-federation/vite": "1.1.9",
+		"@module-federation/vite": "1.2.5",
 		"@types/react": "18.2.79",
 		"@types/react-dom": "18.2.25",
 		"@vitejs/plugin-react": "4.2.1",
